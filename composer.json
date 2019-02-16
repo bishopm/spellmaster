@@ -1,0 +1,59 @@
+{
+    "name": "bishopm/spellmaster",
+    "type": "library",
+    "description": "Spelling tutor API",
+    "keywords": [
+        "education",
+        "spelling"
+    ],
+    "homepage": "https://github.com/bishopm/spellmaster",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Bishop",
+            "email": "support@bishop.net.za",
+            "homepage": "https://github.com/bishopm",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "tymon/jwt-auth": "1.*",
+        "barryvdh/laravel-cors": "0.11.*",
+        "laravelcollective/html": "5.7.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0",        
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bishopm\\Spellmaster\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "bishopm\\spellmaster\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "post-package-update": [
+            "php artisan migrate"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Bishopm\\Churchnet\\Providers\\SpellmasterServiceProvider"
+            ]
+        }
+    }
+}
