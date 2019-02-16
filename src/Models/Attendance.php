@@ -1,6 +1,6 @@
 <?php
 
-namespace Bishopm\Churchnet\Models;
+namespace Bishopm\Spellmaster\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

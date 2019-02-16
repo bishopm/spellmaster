@@ -1,6 +1,6 @@
 <?php
 
-namespace Bishopm\Churchnet\Http\Controllers\Auth;
+namespace Bishopm\Spellmaster\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;

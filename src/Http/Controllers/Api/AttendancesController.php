@@ -1,8 +1,8 @@
 <?php
 
-namespace Bishopm\Churchnet\Http\Controllers\Api;
+namespace Bishopm\Spellmaster\Http\Controllers\Api;
 
-use Bishopm\Churchnet\Models\Attendance;
+use Bishopm\Spellmaster\Models\Attendance;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;

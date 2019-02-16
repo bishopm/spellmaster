@@ -1,6 +1,6 @@
 <?php
 
-namespace Bishopm\Churchnet\Libraries;
+namespace Bishopm\Spellmaster\Libraries;
 
 class SMSfunctions
 {

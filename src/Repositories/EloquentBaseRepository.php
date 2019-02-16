@@ -1,12 +1,12 @@
 <?php
 
-namespace Bishopm\Churchnet\Repositories;
+namespace Bishopm\Spellmaster\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\DB;
-use Bishopm\Churchnet\Repositories\BaseRepository;
-use Bishopm\Churchnet\Models\Circuit;
+use Bishopm\Spellmaster\Repositories\BaseRepository;
+use Bishopm\Spellmaster\Models\Circuit;
 
 /**
  * Class EloquentCoreRepository

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bishopm\Churchnet\Http\Controllers\Auth;
+namespace Bishopm\Spellmaster\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -57,6 +57,6 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        return view('churchnet::auth.login');
+        return view('Spellmaster::auth.login');
     }
 }

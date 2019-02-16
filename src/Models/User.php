@@ -1,6 +1,6 @@
 <?php
 
-namespace Bishopm\Churchnet\Models;
+namespace Bishopm\Spellmaster\Models;
 
 use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Notifications\Notifiable;
@@ -31,27 +31,27 @@ class User extends Authenticatable implements JWTSubject
 
     public function individual()
     {
-        return $this->belongsTo('Bishopm\Churchnet\Models\Individual');
+        return $this->belongsTo('Bishopm\Spellmaster\Models\Individual');
     }
 
     public function circuits()
     {
-        return $this->morphedByMany('Bishopm\Churchnet\Models\Circuit', 'permissible')->withPivot('permission');
+        return $this->morphedByMany('Bishopm\Spellmaster\Models\Circuit', 'permissible')->withPivot('permission');
     }
 
     public function societies()
     {
-        return $this->morphedByMany('Bishopm\Churchnet\Models\Society', 'permissible')->withPivot('permission');
+        return $this->morphedByMany('Bishopm\Spellmaster\Models\Society', 'permissible')->withPivot('permission');
     }
 
     public function districts()
     {
-        return $this->morphedByMany('Bishopm\Churchnet\Models\District', 'permissible')->withPivot('permission');
+        return $this->morphedByMany('Bishopm\Spellmaster\Models\District', 'permissible')->withPivot('permission');
     }
 
     public function circuit()
     {
-        return $this->belongsTo('Bishopm\Churchnet\Models\Circuit');
+        return $this->belongsTo('Bishopm\Spellmaster\Models\Circuit');
     }
 
     public function getJWTIdentifier()

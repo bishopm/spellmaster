@@ -1,6 +1,6 @@
 <?php
 
-namespace Bishopm\Churchnet\Repositories;
+namespace Bishopm\Spellmaster\Repositories;
 
 interface BaseRepository
 {

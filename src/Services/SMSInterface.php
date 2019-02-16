@@ -1,6 +1,6 @@
 <?php
 
-namespace Bishopm\Churchnet\Services;
+namespace Bishopm\Spellmaster\Services;
 
 interface SMSInterface
 {

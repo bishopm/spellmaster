@@ -1,6 +1,6 @@
-<?php namespace Bishopm\Churchnet\Repositories;
+<?php namespace Bishopm\Spellmaster\Repositories;
 
-use Bishopm\Churchnet\Repositories\EloquentBaseRepository;
+use Bishopm\Spellmaster\Repositories\EloquentBaseRepository;
 
 class GroupsRepository extends EloquentBaseRepository
 {

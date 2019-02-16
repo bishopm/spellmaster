@@ -1,8 +1,8 @@
 <?php
  
-namespace Bishopm\Churchnet\Services;
+namespace Bishopm\Spellmaster\Services;
 
-use Bishopm\Churchnet\Services\SMSInterface;
+use Bishopm\Spellmaster\Services\SMSInterface;
 
 class BulkSMSService implements SMSInterface
 {

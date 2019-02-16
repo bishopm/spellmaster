@@ -52,7 +52,7 @@
         },
         "laravel": {
             "providers": [
-                "Bishopm\\Churchnet\\Providers\\SpellmasterServiceProvider"
+                "Bishopm\\Spellmaster\\Providers\\SpellmasterServiceProvider"
             ]
         }
     }

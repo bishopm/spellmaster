@@ -1,6 +1,6 @@
 <?php
 
-namespace Bishopm\Churchnet\Http\Controllers\Auth;
+namespace Bishopm\Spellmaster\Http\Controllers\Auth;
 
 use JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\Hash;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Bishopm\Churchnet\Models\User;
-use Bishopm\Churchnet\Models\Individual;
-use Bishopm\Churchnet\Models\Circuit;
+use Bishopm\Spellmaster\Models\User;
+use Bishopm\Spellmaster\Models\Individual;
+use Bishopm\Spellmaster\Models\Circuit;
 
 class ApiAuthController extends Controller
 {
