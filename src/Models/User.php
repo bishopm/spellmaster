@@ -3,13 +3,10 @@
 namespace Bishopm\Spellmaster\Models;
 
 use Tymon\JWTAuth\Contracts\JWTSubject;
-use Illuminate\Notifications\Notifiable;
-use Actuallymab\LaravelComment\CanComment;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable implements JWTSubject
 {
-    use Notifiable, CanComment;
 
     /**
      * The attributes that are mass assignable.
