@@ -79,6 +79,7 @@ class UsersController extends Controller {
         $data['user'] = User::find($id);
         $data['attempts'] = intval(Score::where('user_id',$id)->sum('attempts'));
         $data['correct'] = intval(Score::where('user_id',$id)->sum('correct'));
+        $data['tags'] = DB::table('tags')->where('count','>',0)->orderBy('name')->get();
         if ($data['correct']==0) {
             $data['score'] = 0;
         } else {

@@ -19,12 +19,17 @@ class WordsController extends Controller {
 	
 	public function index()
 	{
-        return Word::orderBy('word')->get()->toJson();
+        return Word::with('tags')->orderBy('word')->get()->toJson();
     }
     
     public function search($txt)
 	{
         return Word::where('word','like','%' . $txt . '%')->get()->toJson();
+	}
+
+    public function edit($id)
+	{
+        return Word::with('tags')->find($id);
 	}
 
     public function random()
@@ -71,11 +76,15 @@ class WordsController extends Controller {
 
     public function store(Request $request)
     {
-        return Word::create([
+        $word = Word::create([
             'word'=>$request->word,
             'hint'=>$request->hint,
             'level'=>$request->level
         ]);
+        if ($request->tags) {
+            $word->tag($request->tags);
+        }
+        return $word;
     }
 
 }
